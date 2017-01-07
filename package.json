@@ -1,12 +1,12 @@
 {
   "name": "react-in-theory",
   "version": "1.0.0",
-  "description": "A tutorial for building a react app for Turing School",
+  "description": "Scrabble",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,17 @@
   },
   "homepage": "https://github.com/martensonbj/react-in-theory#readme",
   "devDependencies": {
+    "babel": "^6.5.2",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
     "css-loader": "^0.25.0",
+    "enzyme": "^2.7.0",
     "html-webpack-plugin": "^2.22.0",
+    "mocha": "^3.2.0",
     "node-sass": "^3.9.0",
     "sass-loader": "^4.0.1",
     "style-loader": "^0.13.1",
