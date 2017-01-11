@@ -27,4 +27,13 @@ describe('countword', () => {
     const wrapper = mount(<Org />);
     expect(wrapper.find(Org)).to.have.length(1);
   });
+//for AJAX calls/within each test
+  beforeEach(function () {
+    server = sinon.fakeServer.create();
+    window.XMLHttpRequest = global.XMLHttpRequest;
+});
+
+  afterEach(function () {
+      server.restore();
+  });
 })
